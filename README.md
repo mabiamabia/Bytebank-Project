@@ -1,7 +1,7 @@
 # Bytebank-Project
 
 
-# Projeto que simula transferencia de valores $$ e mostra extrato 
+# Projeto que simula transferencia de valores 💰 e mostra extrato 💸
 ## Tecnologias utilizadas💻
 ### Typescript | Angular
 
