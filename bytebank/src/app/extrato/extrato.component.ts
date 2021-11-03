@@ -7,11 +7,11 @@ import { TransferenciaService } from '../services/transferencia.service';
   styleUrls: ['./extrato.component.scss'],
 })
 export class ExtratoComponent implements OnInit {
-  transferencias: any[];
+  @Input() transferencias: any[];
 
   constructor(private service: TransferenciaService) {}
 
-  ngOnInit(){
-    this.transferencias = this.service.transferencias;
+  ngOnInit(): void {
+    this.service.todas().subscribe((x) => (this.transferencias = x));
   }
 }
